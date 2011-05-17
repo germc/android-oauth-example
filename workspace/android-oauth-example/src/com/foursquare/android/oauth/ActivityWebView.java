@@ -40,7 +40,7 @@ public class ActivityWebView extends Activity
                 "&response_type=token" + 
                 "&redirect_uri=" + CALLBACK_URL;
         
-        // If authentication works, we'll get redirected to a url with a pattern like:
+        // If authentication works, we'll get redirected to a url with a pattern like:  
         //
         //    http://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN
         //
