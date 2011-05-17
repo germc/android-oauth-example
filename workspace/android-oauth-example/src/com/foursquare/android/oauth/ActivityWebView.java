@@ -48,18 +48,18 @@ public class ActivityWebView extends Activity
         WebView webview = (WebView)findViewById(R.id.webview);
         webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient() {
-        	public void onPageStarted(WebView view, String url, Bitmap favicon) {
-        		String fragment = "#access_token=";
-        		int start = url.indexOf(fragment);
-        		if (start > -1) {
-        			// You can use the accessToken for api calls now.
-        			String accessToken = url.substring(start + fragment.length(), url.length());
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                String fragment = "#access_token=";
+                int start = url.indexOf(fragment);
+                if (start > -1) {
+                    // You can use the accessToken for api calls now.
+                    String accessToken = url.substring(start + fragment.length(), url.length());
         			
-        			Log.v(TAG, "OAuth complete, token: [" + accessToken + "].");
+                    Log.v(TAG, "OAuth complete, token: [" + accessToken + "].");
                 	
-                	Toast.makeText(ActivityWebView.this, "Token: " + accessToken, Toast.LENGTH_SHORT).show();
-        		}
-        	}
+                    Toast.makeText(ActivityWebView.this, "Token: " + accessToken, Toast.LENGTH_SHORT).show();
+                }
+            }
         });
         webview.loadUrl(url);
     }
