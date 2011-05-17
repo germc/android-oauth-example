@@ -26,10 +26,10 @@ public class ActivityMain extends Activity
         
         Button btn = (Button)findViewById(R.id.button);
         btn.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent(ActivityMain.this, ActivityWebView.class);
-				startActivity(intent);
-			}
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityWebView.class);
+                startActivity(intent);
+            }
         });
     }
 }
