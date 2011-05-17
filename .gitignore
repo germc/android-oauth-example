@@ -2,4 +2,5 @@ workspace/android-oauth-example/bin
 workspace/android-oauth-example/gen
 workspace/android-oauth-example/.classpath
 workspace/android-oauth-example/.settings
+workspace/.metadata
 .DS_Store
