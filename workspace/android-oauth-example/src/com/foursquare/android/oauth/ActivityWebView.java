@@ -20,13 +20,13 @@ import android.widget.Toast;
  */
 public class ActivityWebView extends Activity 
 {
-	private static final String TAG = "ActivityWebView";
+    private static final String TAG = "ActivityWebView";
 	
-	/**
-	 * Get these values after registering your oauth app at: https://foursquare.com/oauth/
-	 */
-	public static final String CALLBACK_URL = "your callback url";
-	public static final String CLIENT_ID = "your client id";
+    /**
+     * Get these values after registering your oauth app at: https://foursquare.com/oauth/
+     */
+    public static final String CALLBACK_URL = "your callback url";
+    public static final String CLIENT_ID = "your client id";
 	
 	
     @Override
@@ -35,7 +35,7 @@ public class ActivityWebView extends Activity
         setContentView(R.layout.activity_webview);
         
         String url =
-        	"https://foursquare.com/oauth2/authenticate" + 
+            "https://foursquare.com/oauth2/authenticate" + 
                 "?client_id=" + CLIENT_ID + 
                 "&response_type=token" + 
                 "&redirect_uri=" + CALLBACK_URL;
