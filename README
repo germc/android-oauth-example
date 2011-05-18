@@ -1,6 +1,7 @@
 This project shows one way of getting an OAuth token from Foursquare. 
 
-Uses the "Pure AJAX application" method from here:
+Uses the "Pure AJAX application" method as described here:
 
   https://developer.foursquare.com/docs/oauth.html
   
+ 
